@@ -1,0 +1,70 @@
+
+Penser, si l'utilisateur :
+
+V clique sur Quitter ;
+V ferme l'application avec la croix (en haut � droite) ;
+- si l'application "crashe" ;
+
+
+========== ========== ========== ========== ========== ========== ========== ========== ==========
+Problèmes en cours
+========== ========== ========== ========== ========== ========== ========== ========== ==========
+
+- la fenêtre de mot de passe apparaît deux fois de suite
+    
+    ==> étudier la piste de la redondance entre le bouton quitter et aboutToQuit
+    
+- comment "bloquer" le programme le temps que le mot de passe soit entré ?
+
+
+========== ========== ========== ========== ========== ========== ========== ========== ==========
+Important
+========== ========== ========== ========== ========== ========== ========== ========== ==========
+
+- QValidator dans la fenêtre de la calculatrice
+
+- centrer la fenêtre sur l'écran au démarrage   --> ???
+
+
+========== ========== ========== ========== ========== ========== ========== ========== ==========
+Nice to have
+========== ========== ========== ========== ========== ========== ========== ========== ==========
+
+- ajuster la taille des TableView automatiquement
+
+X gérer les derniers centimes                   ==> à priori cela ralenti l'appli
+
+X rajouter des infos dans la barre d'état :     ==> à priori cela ralenti l'appli
+
+    + lorsque la somme des montants de xy et de xx n'est pas égale au montant total
+    + en cas d'inégalité dans les montants de la balance
+
+gérer la partie impression :
+
+    + faire des impressions automatiques tous les mois, impressions qui seront envoyées sur la boîte Gmail
+    + ces impressions seront copiées dans un dossier nommé Impressions avec un dossier par année
+
+
+========== ========== ========== ========== ========== ========== ========== ========== ==========
+Infos diverses
+========== ========== ========== ========== ========== ========== ========== ========== ==========
+
+python.exe -m PyQt4.uic.pyuic 03_Proto_3.ui -o Appli_comptes.py
+python.exe -m PyQt4.uic.pyuic 08_Proto_8.ui -o Appli_comptes_II.py
+pyuic4 09_Proto_9.ui -o Appli_comptes_III.py
+pyuic4 10_Proto_10.ui -o Appli_comptes_IV.py
+
+pyuic4 02_MDP_2.ui -o MDP_II.py
+
+pyuic4 02_Calculatrice_trajets_2.ui -o Calculatrice_trajets_II.py
+
+pyuic4 01_Options_d_enregistrement.ui -o Options_d_enregistrement.py
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+version de Notepad++ : v6.9.1
+Paramétrage
+    -> Préférences...
+    -> Divers
+    -> Sélectionner et montrer tout
+    -> Activer le coloriage automatique
