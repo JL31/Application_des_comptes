@@ -180,8 +180,8 @@ class EnvoiMail(object):
             encoders.encode_base64(part)
             part.add_header("Content-Disposition", "attachment; filename= %s" % os.path.basename(fichier))
             
-        # creuser ce que fait exactemetn cette fonction
-        self._msg.attach(part)
+            # creuser ce que fait exactemetn cette fonction
+            self._msg.attach(part)
         
     
     @QtCore.pyqtSlot(str)
